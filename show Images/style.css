@@ -1,0 +1,35 @@
+.main-con{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown-container {
+    max-width: 100%; /* Ensures dropdown fits within the container */
+}
+
+.sel {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    appearance: none;
+}
+
+.sel:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Styling each option */
+.opt {
+    font-size: 16px;
+    color: #333;
+    white-space: nowrap;
+}
+
+

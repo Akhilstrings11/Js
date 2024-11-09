@@ -110,3 +110,101 @@ function displayLaptopSpecs() {
     document.getElementById('output').innerText = laptop;
 
 }
+
+function calAge1(birthYear) {
+    return 2024 - birthYear;
+}
+const age1 = calAge1(2001);
+console.log(age1)
+
+// Arrow Function
+
+const calAge2 = birthYear => 2024 - birthYear;
+const age2 = calAge2(2001);
+console.log(age2)
+
+const yearsUntilRet = (birthYear, name) => {
+    const age = 2024 - birthYear;
+    const retirement = 65 - age;
+    if (age >= 65){
+        return "Retired";
+    } else {
+        return `${name} you will get retired in ${retirement} years.`
+    };
+    // return retirement
+}
+console.log(yearsUntilRet(2001, "Akhil"))
+
+function akkki() {
+    console.log('Akhil')
+}
+akkki()
+
+function aki() {
+    return "Akki"
+}
+console.log(aki())
+
+function fun3(firstName, surName) {
+    return firstName + ' ' + surName
+}
+console.log(fun3("Akhil", "Matta"))
+
+function fun4(firstName, surName) {
+    return firstName + ' ' + surName;
+}
+const fullName = fun4('Vasanthi', "Kaligithi")
+console.log(fullName)
+
+const cars = ['BMW', 'Audi', 'Benz']
+console.log(cars)
+
+const us = ['Akhil', 'Vasanthi', 'Praveen']
+console.log(us)
+
+const akhilFriends = ['Sunny', 'Kiran', 'Praveen', 'Jay'];
+console.log(akhilFriends);
+
+const firstName = 'Akhil'
+const akhilData = [firstName, 'Matta', calAge1(2001), akhilFriends]
+console.log(akhilData)
+
+akhilFriends.push('Ganesh');
+akhilFriends.unshift('Siddu');
+akhilFriends.pop();
+akhilFriends.shift();
+console.log(akhilFriends)
+
+const details = {
+    firstName: 'Akhil',
+    lastName: 'Matta',
+    age: calAge1(2001),
+    job: 'Developer',
+    friends: ["Sunny", "Kiran", "Praveen"],
+    address: "Malikipuram"
+}
+console.log(details)
+
+// loops
+
+for(let rep = 1; rep <= 15; rep++){
+    console.log(`Lifted ${rep} times`)
+    // console.log('Liftd' + ' ' + rep + ' ' + 'times')
+}
+
+function geet(){
+    console.log('Hello!')
+}
+geet()
+
+function namee(){
+    console.log('Akhil')
+}
+
+function full() {
+    geet();
+    namee();
+    console.log('Welcome to the Party')
+}
+full();
+

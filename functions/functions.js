@@ -208,3 +208,104 @@ function full() {
 }
 full();
 
+function adding() {
+    var a = Number(document.getElementById('aValue').value);
+    var b = Number(document.getElementById('bValue').value);
+    var addi = a + b
+    document.getElementById('add').innerHTML = addi;
+}
+
+const obj = {
+    name: 'Akhil',
+    age: 23
+}
+
+const obj2 = {
+    name: 'Akhil',
+    age: 23
+}
+const obj3 = obj
+console.log(obj === obj2)
+
+console.log(obj === obj3)
+
+let person = {
+    name: 'Vasanthi',
+    sayHello: function() {
+        console.log('Hello '+ this.name + "!");
+    }
+}
+person.sayHello()
+
+function nm() {
+    console.log('Hello')
+}
+nm()
+
+nmm = (name) => {
+    return name
+}
+
+let friendss = ['Akhil', 'Vasanthi', 'Deeksha', 'Praveen']
+console.log(friendss)
+
+friendss.pop() //removes last item
+console.log(friendss)
+
+friendss.shift() //Removes first item
+console.log(friendss)
+
+friendss.push('Udaya') //adds last
+console.log(friendss)
+
+friendss.unshift('Abha') //adds first
+console.log(friendss)
+
+delete friendss[0]
+console.log(friendss)
+
+let text = 'Akhil is a good boy and worst boy in the colony'
+console.log(text)
+
+const myArr = text.match('boy')
+console.log(myArr)
+
+let x = 5;
+
+console.log(x !== 6)
+
+function add() {
+let c = Number(document.getElementById('CValue').value);
+let d = Number(document.getElementById('DValue').value);
+var addit = c + d;
+console.log(addit)
+}
+
+let textt = 'Vasanthi kaligithi Vasanthi kaligithi Vasanthi kaligithi Vasanthi kaligithi Vasanthi kaligithi'
+let length = textt.length;
+
+console.log(textt)
+console.log(length)
+
+let char = textt.charAt(6);
+console.log(char)
+
+
+const personn = {
+    fullNamee: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+
+const person1 = {
+    firstName: 'Akhil',
+    lastName: 'Matta'
+}
+
+const person2 = {
+    firstName: 'Vasanthi',
+    lastName: 'Kaligithi'
+}
+
+console.log(personn.fullNamee.call(person1))
+

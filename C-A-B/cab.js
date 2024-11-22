@@ -17,3 +17,8 @@ const person2 = {
 
 person.fullName.call(person2)
 console.log(person1)
+
+ function add() {
+    let a = document.getElementById('aValue').value
+    let b = document.getElementById('')
+ }
